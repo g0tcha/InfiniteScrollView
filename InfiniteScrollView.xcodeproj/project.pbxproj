@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		BFA669BC21B5AC7700E3C061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA669BB21B5AC7700E3C061 /* AppDelegate.swift */; };
 		BFA669BE21B5AC7700E3C061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA669BD21B5AC7700E3C061 /* ViewController.swift */; };
-		BFA669C121B5AC7700E3C061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA669BF21B5AC7700E3C061 /* Main.storyboard */; };
 		BFA669C321B5AC8500E3C061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA669C221B5AC8500E3C061 /* Assets.xcassets */; };
-		BFA669C621B5AC8500E3C061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA669C421B5AC8500E3C061 /* LaunchScreen.storyboard */; };
+		BFA669CE21B5AFBB00E3C061 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA669CD21B5AFBB00E3C061 /* EasyPeasy.framework */; };
+		BFA669D121B5E10300E3C061 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA669D021B5E10300E3C061 /* ContainerView.swift */; };
+		BFA669D321B5E94900E3C061 /* UIScrollView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA669D221B5E94900E3C061 /* UIScrollView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFA669B821B5AC7700E3C061 /* InfiniteScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA669BB21B5AC7700E3C061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA669BD21B5AC7700E3C061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFA669C021B5AC7700E3C061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFA669C221B5AC8500E3C061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BFA669C521B5AC8500E3C061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA669C721B5AC8500E3C061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA669CD21B5AFBB00E3C061 /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = Carthage/Build/iOS/EasyPeasy.framework; sourceTree = SOURCE_ROOT; };
+		BFA669D021B5E10300E3C061 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		BFA669D221B5E94900E3C061 /* UIScrollView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA669CE21B5AFBB00E3C061 /* EasyPeasy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +57,13 @@
 		BFA669BA21B5AC7700E3C061 /* InfiniteScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				BFA669CD21B5AFBB00E3C061 /* EasyPeasy.framework */,
 				BFA669BB21B5AC7700E3C061 /* AppDelegate.swift */,
 				BFA669BD21B5AC7700E3C061 /* ViewController.swift */,
-				BFA669BF21B5AC7700E3C061 /* Main.storyboard */,
 				BFA669C221B5AC8500E3C061 /* Assets.xcassets */,
-				BFA669C421B5AC8500E3C061 /* LaunchScreen.storyboard */,
 				BFA669C721B5AC8500E3C061 /* Info.plist */,
+				BFA669D021B5E10300E3C061 /* ContainerView.swift */,
+				BFA669D221B5E94900E3C061 /* UIScrollView+.swift */,
 			);
 			path = InfiniteScrollView;
 			sourceTree = "<group>";
@@ -74,6 +78,7 @@
 				BFA669B421B5AC7700E3C061 /* Sources */,
 				BFA669B521B5AC7700E3C061 /* Frameworks */,
 				BFA669B621B5AC7700E3C061 /* Resources */,
+				BFA669CF21B5B17100E3C061 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,13 +127,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA669C621B5AC8500E3C061 /* LaunchScreen.storyboard in Resources */,
 				BFA669C321B5AC8500E3C061 /* Assets.xcassets in Resources */,
-				BFA669C121B5AC7700E3C061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BFA669CF21B5B17100E3C061 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EasyPeasy.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EasyPeasy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFA669B421B5AC7700E3C061 /* Sources */ = {
@@ -136,30 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA669BE21B5AC7700E3C061 /* ViewController.swift in Sources */,
+				BFA669D321B5E94900E3C061 /* UIScrollView+.swift in Sources */,
 				BFA669BC21B5AC7700E3C061 /* AppDelegate.swift in Sources */,
+				BFA669D121B5E10300E3C061 /* ContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BFA669BF21B5AC7700E3C061 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFA669C021B5AC7700E3C061 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BFA669C421B5AC8500E3C061 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFA669C521B5AC8500E3C061 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BFA669C821B5AC8500E3C061 /* Debug */ = {
@@ -284,6 +292,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G68R287BD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InfiniteScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +314,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G68R287BD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InfiniteScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

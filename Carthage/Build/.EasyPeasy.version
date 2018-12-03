@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.8.0",
+  "iOS" : [
+    {
+      "name" : "EasyPeasy",
+      "hash" : "83527ed5698601b4eccf99ac843c3cda56fbe7979504300eb55446e9b3bce5bd"
+    }
+  ]
+}
